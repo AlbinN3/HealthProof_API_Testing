@@ -8,12 +8,13 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 public class tc1_steps {
-	private static final String BASE_URL = "https://api.restful-api.dev/";
+	private static final String BASE_URL = "https://jsonplaceholder.typicode.com/posts";
 	Response response;
 	RequestSpecification request;
 	String output;
-	@Given("the user in the URL https:\\/\\/api.restful-api.dev\\/objects")
-	public void the_user_in_the_URL_https_api_restful_api_dev_objects() {
+	@Given("the user in the URL https://jsonplaceholder.typicode.com/posts")
+	
+	public void the_user_in_the_URL_https_jsonplaceholder_typicode_posts() {
 	    System.out.println("Base URL is"+BASE_URL);
 	    RestAssured.baseURI=BASE_URL;
 	}
